@@ -24,7 +24,7 @@ export default async (req: NowRequest, res: NowResponse) => {
       throw new Error("");
     }
     res.json({
-      text: `Ah yes, :${resp.data.name}: was uploaded by <@${resp.data.user_id}>`,
+      text: `Ah yes, :${resp.data.name}: (\`${resp.data.name}\`) was uploaded by <@${resp.data.user_id}>`,
     });
   } catch (e) {
     res.json({
