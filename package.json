@@ -1,0 +1,14 @@
+{
+  "name": "emojinfo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cjdenio/emojinfo",
+  "author": "Caleb Denio <cjdenio44@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@vercel/node": "^1.8.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
