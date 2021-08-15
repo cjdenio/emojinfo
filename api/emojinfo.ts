@@ -21,6 +21,7 @@ export default async (req: NowRequest, res: NowResponse) => {
       params.toString()
     );
     if (!resp.data.ok) {
+      console.log(resp.data);
       throw new Error("");
     }
     res.json({
@@ -28,8 +29,7 @@ export default async (req: NowRequest, res: NowResponse) => {
     });
   } catch (e) {
     res.json({
-      text:
-        "Something went wrong :cry: Make sure you ran the command like this: `/emojinfo :emoji-name:`\nAlso, this command only works for custom emoji.",
+      text: "Something went wrong :cry: Make sure you ran the command like this: `/emojinfo :emoji-name:`\nAlso, this command only works for custom emoji.",
     });
   }
 };
